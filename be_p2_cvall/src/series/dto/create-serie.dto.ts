@@ -34,6 +34,14 @@ export class CreateSerieDto {
   readonly director: string;
 
   @ApiProperty() //Swagger
+  @IsNotEmpty({ message: 'El campo tipoGenero es obligatorio' })
+  @IsString({ message: 'El campo tipoGenero debe ser tipo cadena' })
+  @MaxLength(100, {
+    message: 'El campo tipoGenero no debe ser mayor a 100 caracteres',
+  })
+  readonly tipoGenero: string;
+
+  @ApiProperty() //Swagger
   @IsDefined({ message: 'El campo temporadas debe estar definido' })
   @IsNumber({}, { message: 'El campo temporadas debe ser tipo número' })
   readonly temporadas: number;

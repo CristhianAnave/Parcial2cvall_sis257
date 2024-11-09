@@ -46,6 +46,7 @@
           <th>TITULO</th>
           <th>SINOPSIS</th>
           <th>DIRECTOR</th>
+          <th>TIPOGENERO</th>
           <th>TEMPORADAS</th>
           <th>FECHA DE ESTRENO</th>
           <th>Acciones</th>
@@ -57,6 +58,7 @@
           <td>{{ serie.titulo }}</td>
           <td>{{ serie.sinopsis }}</td>
           <td>{{ serie.director }}</td>
+          <td>{{ serie.tipoGenero }}</td>
           <td>{{ serie.temporadas }}</td>
           <td>{{ serie.fechaEstreno }}</td>
           <td>

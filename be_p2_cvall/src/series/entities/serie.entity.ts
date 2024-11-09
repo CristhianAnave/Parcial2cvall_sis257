@@ -21,6 +21,9 @@ export class Serie {
   @Column('varchar', { length: 100 })
   director: string;
 
+  @Column('varchar', { length: 100 })
+  tipoGenero: string;
+
   @Column('int')
   temporadas: number;
 
